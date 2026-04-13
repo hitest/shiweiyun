@@ -1,0 +1,8 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import App from '../../app/App';
+---
+
+<Layout title="史伟云 教授 - 官方个人主页" lang="zh" description="史伟云教授的官方医疗介绍页面，专注于眼科领域。" lastUpdated={new Date().toISOString().split('T')[0]}>
+  <App initialLanguage="zh" client:load />
+</Layout>

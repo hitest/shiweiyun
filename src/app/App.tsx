@@ -10,9 +10,9 @@ import { Contact } from "./components/Contact";
 import { Footer } from "./components/Footer";
 import { LanguageProvider } from "./context/LanguageContext";
 
-export default function App() {
+export default function App({ initialLanguage = "en" }: { initialLanguage?: "en" | "zh" }) {
   return (
-    <LanguageProvider>
+    <LanguageProvider initialLanguage={initialLanguage}>
       <div className="min-h-screen bg-gray-50">
         <Navbar />
         <Hero />

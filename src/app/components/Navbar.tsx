@@ -22,7 +22,9 @@ export function Navbar() {
   };
 
   const toggleLanguage = () => {
-    setLanguage(language === "en" ? "zh" : "en");
+    const target = language === "en" ? "zh" : "en";
+    const basePath = window.location.pathname.startsWith('/shiweiyun') ? '/shiweiyun' : '';
+    window.location.href = target === 'en' ? `${basePath}/` : `${basePath}/zh/`;
   };
 
   const navLinks = [

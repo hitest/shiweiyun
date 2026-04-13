@@ -1,0 +1,8 @@
+---
+import Layout from '../layouts/Layout.astro';
+import App from '../app/App';
+---
+
+<Layout title="Prof. Shi Weiyun - Official Profile" lang="en" description="Official Medical Profile of Prof. Shi Weiyun, specializing in Ophthalmology." lastUpdated={new Date().toISOString().split('T')[0]}>
+  <App initialLanguage="en" client:load />
+</Layout>
